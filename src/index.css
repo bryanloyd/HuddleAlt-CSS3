@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+
+:root {
+  --pink: hsl(322, 100%, 66%);
+
+  --very-pale-cyan: hsl(193, 100%, 96%);
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --grayish-blue: hsl(208, 11%, 55%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 6rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+  line-height: 6rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+  line-height: 4.2rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+  line-height: 3rem;
+}
+
+h5 {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+h6 {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grayish-blue);
+  padding: 0;
+}
+
+/* Header Component */
+.header {
+  background-color: var(--very-pale-cyan);
+  background-image: url(./images/bg-hero-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 25px 20px;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 75px;
+}
+
+.header-top img {
+  width: 104px;
+}
+
+.header-top button {
+  width: 96px;
+  height: 24px;
+  border-radius: 25px;
+  border: none;
+  background-color: white;
+  box-shadow: 0px 0px 5px var(--very-dark-cyan);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.header-top button:hover {
+  color: var(--grayish-blue);
+}
+
+.header-bottom {
+  text-align: center;
+  padding: 0 15px;
+}
+
+.header-bottom h4 {
+  margin-bottom: 25px;
+}
+
+.header-bottom p {
+  margin-bottom: 25px;
+}
+
+.header-bottom button {
+  width: 240px;
+  height: 40px;
+  border: none;
+  border-radius: 25px;
+  margin-bottom: 50px;
+  background-color: var(--pink);
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.header-bottom button:hover {
+  background-color: hsl(322, 100%, 80%);
+}
+
+/* Together Component */
+.together,
+.conversations {
+  margin: 50px 15px 25px 15px;
+  box-shadow: 0px 0px 5px 0.5px hsl(192, 100%, 9%, 0.1);
+  text-align: center;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.users {
+  margin: 50px 15px 0px 15px;
+  box-shadow: 0px 0px 5px 0.5px hsl(192, 100%, 9%, 0.1);
+  text-align: center;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.together img,
+.conversations img,
+.users img {
+  margin-bottom: 25px;
+}
+
+.together h5,
+.conversations h5,
+.users h5 {
+  margin-bottom: 25px;
+}
+
+/* CTA Component */
+.cta {
+  background-color: white;
+  margin: 25px 15px 25px 15px;
+  box-shadow: 0px 0px 5px 0.5px hsl(192, 100%, 9%, 0.1);
+  text-align: center;
+  position: relative;
+  top: 100px;
+  border-radius: 15px;
+  padding: 50px 25px;
+  height: 176px;
+}
+
+.cta h6 {
+  margin-bottom: 25px;
+}
+
+.cta button {
+  width: 240px;
+  height: 40px;
+  border: none;
+  border-radius: 25px;
+  margin-bottom: 50px;
+  background-color: var(--pink);
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  box-shadow: 0px 0px 5px 0.5px hsl(192, 100%, 9%, 0.1);
+  cursor: pointer;
+}
+
+.cta button:hover {
+  background-color: hsl(322, 100%, 80%);
+}
+
+/* Footer Component */
+.footer {
+  background-color: hsl(192, 100%, 9%);
+  padding: 150px 0 50px 0;
+}
+
+.footer-logo {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%)
+    contrast(103%);
+  margin-bottom: 25px;
+  padding-left: 65px;
+}
+
+.footer-section-one {
+  display: grid;
+  margin-bottom: 50px;
+  padding: 0 65px;
+}
+
+.footer-section-two {
+  margin-bottom: 50px;
+  padding: 0 65px;
+}
+
+.footer-section-two p {
+  margin-bottom: 20px;
+}
+
+.footer-social {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%)
+    contrast(103%);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.footer-social img:hover {
+  filter: invert(56%) sepia(75%) saturate(3668%) hue-rotate(294deg)
+    brightness(101%) contrast(101%);
+}
+
+.footer-ipps {
+  text-align: center;
+  font-size: 1.2rem;
+}
